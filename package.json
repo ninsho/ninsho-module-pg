@@ -1,0 +1,48 @@
+{
+  "name": "ninsho-module-pg",
+  "version": "0.0.8",
+  "description": "A module for connecting to PostgreSQL used on ninsho.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "scripts": {
+    "lint": "eslint \"src/**/*.ts\" \"src/*.ts\"",
+    "prebuild": "rimraf dist",
+    "test": "jest --config ./jest.config.json --runInBand --coverage",
+    "build-t": "tsc",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninsho/ninsho-module-pg/issues"
+  },
+  "homepage": "https://github.com/ninsho/ninsho-module-pg/",
+  "dependencies": {
+    "ninsho-base": "^0.0.0",
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/pg": "^8.10.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "eslint": "^7.8.1",
+    "jest": "^29.5.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^29.0.5",
+    "ts-loader": "^9.4.2",
+    "ts-node-dev": "^2.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0",
+    "typescript": "^4.6.2"
+  },
+  "sideEffects": false
+}
