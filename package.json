@@ -1,6 +1,6 @@
 {
   "name": "ninsho-module-pg",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A module for connecting to PostgreSQL used on ninsho.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/ninsho/ninsho-module-pg/",
   "dependencies": {
-    "ninsho-base": "^0.0.0",
+    "ninsho-base": "^0.0.6",
     "pg": "^8.10.0"
   },
   "devDependencies": {
@@ -39,10 +39,10 @@
     "ts-jest": "^29.0.5",
     "ts-loader": "^9.4.2",
     "ts-node-dev": "^2.0.0",
+    "typescript": "^4.6.2",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
-    "webpack-node-externals": "^3.0.0",
-    "typescript": "^4.6.2"
+    "webpack-node-externals": "^3.0.0"
   },
   "sideEffects": false
 }
